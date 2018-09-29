@@ -1,0 +1,73 @@
+@import "vars";
+@import "mixins";
+
+*{
+    font-family: $mainFont;
+}
+
+.btn{
+    @include buttons;
+}
+
+
+    
+header{
+    background-color: $headerFooterBoja;
+    width: 100%;
+    height: 5em;
+    
+    
+}
+.prviNav{
+    width: 100%;
+    height: 100%;
+    ul{
+        padding-top: 1.5em;
+        li{
+        @include nav;
+        }
+
+    }
+}
+.prviDiv{
+    height: 40em;
+    background-size: cover;
+    background: url(../slike/intro.jpg) no-repeat center center;
+    @include cover_background;
+    .naslovi{
+        color: white;
+        display: block;
+        background: black;
+        @include providnost(0.2);
+        width: 50em;
+        text-align: center;
+        margin:0 auto;
+        
+        
+    }
+}
+.treciDiv{
+    width: 100%;
+        float: left;
+        clear: both;
+}
+.previewDiv{
+        @include cover_background;
+        opacity: 0.7;
+        margin: 2%;
+        display: inline-block;
+        cursor: pointer;
+    @for $i from 1 through 6 {
+        &#pic#{$i} {
+            background-image: url("../slike/#{$i}.jpg");
+        }
+    }
+}
+
+   
+
+
+
+
+
+

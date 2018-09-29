@@ -1,0 +1,37 @@
+
+@mixin nav {
+    text-decoration: none;
+    display: inline;
+    color: white;
+    padding:2em;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+@mixin buttons{
+    text-decoration: none;
+    background-color: white;
+    color: $bojaFont;
+    padding: 1em 1.5em;
+    border: 0.05em solid $bojaFont;
+    border-radius: 5em / 5em;
+    &:hover{
+        background-color: $svetloSivabg;
+
+    }
+}
+
+@mixin cover_background {
+	-webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+@mixin providnost($opacity) {
+	-khtml-opacity: $opacity;
+	  -moz-opacity: $opacity;
+	       opacity: $opacity;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+		filter: alpha(opacity=$opacity*100);
+}
