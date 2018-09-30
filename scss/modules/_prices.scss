@@ -1,0 +1,26 @@
+table {
+
+    empty-cells: hide;
+    color: white;
+    text-align: center;
+    border-collapse: collapse;
+
+    tbody {
+        th,td {
+            border: 1px solid grey; 
+        }
+    }
+    td {
+        color: grey;
+    }
+    th {
+        background-color: rgb(25,25,112);
+        padding: 10px;
+    }
+    th.red {
+        background-color: rgb(255,69,0);
+    }
+    th.no-color {
+        background-color: transparent;
+    }
+}
