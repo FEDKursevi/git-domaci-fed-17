@@ -1,7 +1,18 @@
 @import "_vars";
 
+.prices {
+    text-align: center;
+
+    h5 {
+        padding-bottom: 30px;
+        font-weight: 100;
+    }
+}
+
 table {
 
+    margin: 0 auto;
+    width: 50%;
     empty-cells: hide;
     color: white;
     text-align: center;
