@@ -1,0 +1,38 @@
+body {
+    background: grey;
+}
+
+.nav {
+
+    ul {
+        height: 4em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #dddddd;
+    }
+    
+    li {
+        float: left;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    li a  {
+        display: block;
+        padding: 8px;
+        
+    }
+    
+    #new-york, img {
+        float: left;
+    }
+
+    img {
+        height: 3em;
+    }
+
+}
+
+
