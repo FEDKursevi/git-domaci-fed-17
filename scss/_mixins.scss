@@ -1,0 +1,17 @@
+@mixin clearfix {
+	&:before, &:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+}
+@mixin providnost($opacity) {
+	-khtml-opacity: $opacity;
+	  -moz-opacity: $opacity;
+	       opacity: $opacity;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+		filter: alpha(opacity=$opacity*100);
+}
+

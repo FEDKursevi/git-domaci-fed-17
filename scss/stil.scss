@@ -1,24 +1,5 @@
-$bojaFonta:#797979;
-$bojaLokacije:#f75311;
-$bojaHeader:#374249;
-$font: 'Roboto', sans-serif;
-@mixin clearfix {
-	&:before, &:after {
-	    content: "";
-	    display: table;
-	}
-	&:after {
-	    clear: both;
-	}
-}
-@mixin providnost($opacity) {
-	-khtml-opacity: $opacity;
-	  -moz-opacity: $opacity;
-	       opacity: $opacity;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
-		filter: alpha(opacity=$opacity*100);
-}
-
+@import 'vars';
+@import 'mixins';
 
 *{
 box-sizing: border-box;
@@ -108,15 +89,17 @@ header{
     font-size: 1.4em;
 
    
-  /* @include clearfix();*/
+   @include clearfix();
      
         
 }
 h1,h3{
     color:white;
     text-align:center;
-    background: #f3f7f9;
-   /* @include providnost(0.4);*/
+    background:rgba($color: #000000, $alpha: 0.4)  ;
+
+   
+    
     
 }
 h1{
