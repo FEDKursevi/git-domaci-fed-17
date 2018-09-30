@@ -1,0 +1,40 @@
+@import "_vars";
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .9);
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 30px 100px 30px 35px;
+        font-size: 1.2em;
+    }
+
+    li:first-child {
+        background-color: $red-orange;
+        padding-left: 10px;
+        padding-right: 200px;
+        color: white;
+        font-size: 1.6em;
+        text-decoration: underline;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+}
