@@ -1,0 +1,37 @@
+@mixin main {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+<<<<<<< HEAD
+=======
+		color: $main_text_color;
+>>>>>>> aedb8e4c36a958a02b30d448fe20d838aba14c9f
+	}
+}
+
+@mixin clearfix {
+	&:before, &:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+<<<<<<< HEAD
+=======
+}
+
+@mixin tablet {
+	@media screen and(max-width: 950px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and(max-width: 650px) {
+		@content;
+	}
+>>>>>>> aedb8e4c36a958a02b30d448fe20d838aba14c9f
+}
