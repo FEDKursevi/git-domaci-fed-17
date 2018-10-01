@@ -120,7 +120,6 @@ h1{
 }
 .sobe{
     background: $bojaSekcije;
-   
     text-align: center;
 } 
 .slika{
@@ -136,22 +135,24 @@ h1{
         display: none;
 
     }
+
     &:hover .pozadina {
         display: block;
-        
-
-       
     }
+
     .pozadina h1,h2{
+        height: 3em;
         margin:0;
-        padding:0;
+       
         color:black;
         background: rgba(255, 255, 255, 0.6);
         font-weight: normal;
         font-size:1.2em;
-        height: 3em;
+        
     }
-   
+    .pozadina h1{
+        padding-top:1em;
+    }
 }
 .prva{
     background-image: url('../slike/1.jpg' );
@@ -166,11 +167,11 @@ h1{
 .treca{
     background-image: url('../slike/3.jpg' );
     background-size: cover;	
- }
+}
 .cetvrta{
     background-image: url('../slike/4.jpg' );
     background-size: cover;	
-   }
+}
 .peta{
     background-image: url('../slike/5.jpg' );
     background-size: cover;	
@@ -179,5 +180,49 @@ h1{
     background-image: url('../slike/6.jpg' );
     background-size: cover;	
 }
+
+.tabela{
+    text-align: center;
+
+
+    .th1,.th3{
+        background: none;
+        color: $bojaFonta;
+        margin-top:1em;
+    }
+    .th1{
+        color:$bojaHeader;
+        font-size: 1.8em;
+    }
+
+    .tabelarniPrikaz{
+        width: 60%;
+		margin: 3em auto;
+        border-collapse: collapse;
+       
+
+        th, td {
+            padding: .5em;
+            border: 1px solid $bojaFonta;
+            font-weight: normal;
+            
+            
+		}
+        .header1{
+            background:$bojaLokacije;
+            color:white;
+        }
+        .header2{
+            background:$bojaHeader;
+            color:white;
+        }
+        .nema{
+            border: none;
+        }
+    }
+
+
+}
+
 
 
