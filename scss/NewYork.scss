@@ -152,4 +152,58 @@ section.forth {
         }
         
 }
-
+section.fifth {
+    width: 100%;
+    background: #f3f7f9;
+    height: 300px;
+    h3 {
+        text-align: center;
+        color : #797979;
+        padding-top: 20px;
+    }
+    .mapouter {
+        float: left;
+        width: 40%;
+        margin-right: 2px;
+        
+    }
+    .forma{
+        float : right;
+        width: 55%;
+        background: #f75311;
+        #Mrs {
+            width: 20%;
+            padding: 5px;
+            margin : 15px;
+        }
+        #name {
+            width: 65%;
+            padding: 5px;
+            margin : 15px;
+        }
+        #mail {
+            width: 92%;
+            padding: 5px;
+            margin : 15px;
+        }
+        #tekst {
+            width: 92%;
+            padding: 5px;
+            margin : 15px;       
+        }
+    }
+}
+footer {
+    width: 100%;
+    background: #374249;
+    height: 50px;
+    
+}
+    p.lefttext {
+        display:inline-block;
+    color :#f3f7f9 ;
+    } 
+    p.righttext {
+        display:inline-block;  
+        color : #f75311 ;  
+    }
