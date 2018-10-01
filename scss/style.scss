@@ -9,6 +9,25 @@
     @include buttons;
 }
 
+.location {
+    height: 100%;
+    width: 20%;
+    float: left;
+    background: $orangeBoja;
+    text-decoration: underline;
+
+    img {
+        height: 100%;
+        float: left;
+    }
+
+    span {
+        font-size: 1em;
+        float: left;
+        margin-top: 1.5em;
+        text-decoration: underline;
+    }
+}
 
     
 header{
@@ -30,39 +49,120 @@ header{
     }
 }
 .prviDiv{
-    height: 40em;
+    position: relative;
+    height: 50em;
     background-size: cover;
     background: url(../slike/intro.jpg) no-repeat center center;
     @include cover_background;
     .naslovi{
-        color: white;
-        display: block;
+        position: absolute;
+        margin-top:30em;
+        margin-left: 20em;      
         background: black;
         @include providnost(0.2);
         width: 50em;
-        text-align: center;
-        margin:0 auto;
-        
-        
+        text-align: center; 
+        color: white;
+       
     }
 }
 .treciDiv{
-    width: 100%;
+    background-color: $svetloSivabg;
+    margin-left:10em;
+    margin-right: 10em;
+    
+    .previewDiv{
+        width: 20%;
+        height: 20em;
         float: left;
-        clear: both;
-}
-.previewDiv{
-        @include cover_background;
-        opacity: 0.7;
-        margin: 2%;
-        display: inline-block;
-        cursor: pointer;
+        margin: 1em;
+        .info {
+            display: none;
+		    width: 100%;
+		    height: 40%;
+		    background: rgba(255, 255, 255, 0.7);
+		    padding: 1em;
+            h1, h2 { font-weight: normal; }
+        }
+    
+        &:hover .info { display: block; }
     @for $i from 1 through 6 {
         &#pic#{$i} {
-            background-image: url("../slike/#{$i}.jpg");
+            background: url("../slike/#{$i}.jpg");
+            background-size: cover;
         }
     }
 }
+}
+.drugiDiv{
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width:100%;
+    height:3em;
+    float: left;
+     .btn{
+        float: right;
+        margin-right: 5em;
+    }
+    
+}
+
+
+
+
+.cetvrtiDiv {
+	color: $bojaFont;
+    text-align: center;
+    
+    h1 {
+		font-size: 2em;
+		color: $bojaNaslov;
+		text-align: center;
+		text-transform: uppercase;
+        margin-bottom: 1.5em;
+        margin-top: 5em;
+    }
+
+	.pricingTable {
+		width: 60%;
+		margin: 3em auto;
+		border-collapse: collapse;
+
+		th, td {
+			padding: .5em;
+		}
+
+		.orange {
+			background: $orangeBoja;
+			color: #fff;
+		}
+
+		.darkCol {
+			background: $bojaNaslov;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		thead {
+			.darkCol {
+				border-right: 1px solid $bojaFont;
+			}
+		}
+
+		tbody {
+			td {
+				border: 1px solid $bojaFont;
+			}
+		}
+    }
+
+
+
+	.pricingButton { display: none; }
+
+}
+
 
    
 
