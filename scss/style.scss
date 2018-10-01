@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'var';
+@import 'mixin';
+
+@include body;
+
+header{
+    width: 100%;
+    height: 5em;
+}
+    .location, nav {
+		padding: 1em 2em;
+    }    
+    .location {
+		height: 100%;
+		width: 20%;
+		float: left;
+		background: $loc_bkg;
+		text-decoration: underline;
+
+		img {
+			height: 100%;
+			float: left;
+		}
+
+		span {
+			font-size: 1.5em;
+			float: left;
+			margin-top: 0.3em;
+    		text-decoration: underline;
+		}
+    }
+    nav {
+		float: right;
+		height: 100%;
+		width: 80%;
+		text-align: left;
+		background: $nav_bkg;
+
+		ul {
+			list-style: none;
+			padding-top: .8em;
+
+			li {
+				display: inline-block;
+				margin-right: 5em;
+				font-size: 1.2em;
+
+				a {
+					color: #fff;
+					vertical-align: middle;
+					text-decoration: none;
+
+					&:hover { text-decoration: underline; }
+				}
+			}
+		}
+	}
