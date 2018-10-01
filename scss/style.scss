@@ -242,3 +242,98 @@ footer {
 
 	span { color: $main_orange; }
 }
+
+@media screen and (max-width: 1200px) {
+
+	.column {
+		width: 45%;
+	}
+
+	.pricing {
+		.pricingTable { width: 100%; }
+	}
+
+	.contact {
+
+		.mapHolder {
+			width: 50%;
+			float: none;
+			margin: 1em auto;
+		}
+
+		form {
+			width: 100%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 670px) {
+
+	header {
+		.location {
+			width: 100%;
+		}
+
+		nav {
+			width: 100%;
+			height: auto;
+
+			ul {
+				li {
+					width: 100%;
+					text-align: center;
+					padding: 1em;
+				}
+			}
+		}
+	}
+
+	section {
+		padding: 3em 1em;
+	}
+
+	.intro {
+		background: #000;
+		height: auto;
+
+		h1, h2 {
+			background: none;
+		}
+	}
+
+	.column {
+		display: block;
+		margin: 1em auto;
+		width: 100%;
+
+		.columnInfo {
+			display: block;
+		}
+	}
+
+	.pricing {
+
+		.pricingTable { display: none; }
+		.pricingButton { 
+			display: inline-block;
+    		margin-top: 2em; 
+		}
+	}
+
+	.contact {
+
+		.mapHolder {
+			width: 80%;
+		}
+
+		form {
+			margin: 1em 0;
+
+			.contactInput, .contactInput[type="text"] {
+				width: 96%;
+				float: none;
+			}
+		}
+	}
+}
