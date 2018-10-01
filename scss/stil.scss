@@ -102,16 +102,82 @@ h1{
 }
 .dugmici{
     width: 100%;
-    background: $bojaSekcije;
     height: 3.5em;
     text-align: right;
+   
 
     .dugme{
         padding:0.8em 1.8em;
         border:solid 1px $bojaFonta;
         border-radius:25px;
         margin-left:2em;
-    
+        
+        &:hover{
+            background: $bojaDugmica;
+            color: $hoverSlova;
+        }
     }
-
 }
+.sobe{
+    background: $bojaSekcije;
+   
+    text-align: center;
+} 
+.slika{
+    width: 15em;
+    height:300px;
+    float: left;
+    margin: 1em;
+    padding:0 ; 
+     
+    .pozadina{
+        margin:0;
+        padding:0;
+        display: none;
+
+    }
+    &:hover .pozadina {
+        display: block;
+        
+
+       
+    }
+    .pozadina h1,h2{
+        margin:0;
+        padding:0;
+        color:black;
+        background: rgba(255, 255, 255, 0.6);
+        font-weight: normal;
+        font-size:1.2em;
+        height: 3em;
+    }
+   
+}
+.prva{
+    background-image: url('../slike/1.jpg' );
+    background-size: cover;	
+}
+
+.druga{
+   
+    background-image: url('../slike/2.jpg' );
+    background-size: cover;	
+}
+.treca{
+    background-image: url('../slike/3.jpg' );
+    background-size: cover;	
+ }
+.cetvrta{
+    background-image: url('../slike/4.jpg' );
+    background-size: cover;	
+   }
+.peta{
+    background-image: url('../slike/5.jpg' );
+    background-size: cover;	
+}
+.sesta{
+    background-image: url('../slike/6.jpg' );
+    background-size: cover;	
+}
+
+
